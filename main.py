@@ -1,12 +1,7 @@
-import requests
-import secrets
-
-MSG = "NEW FILE (FlightAPP) TEST"
+import telegram
 
 def main():
-    xx = f"https://api.telegram.org/bot{secrets.TELE_TOK}/sendMessage?chat_id=@{secrets.GROUP_ID}&text={MSG}"
-    x = requests.get(xx)
-
+    telegram.send_message()
 
 
 if __name__ == "__main__":
